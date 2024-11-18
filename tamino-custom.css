@@ -1,0 +1,125 @@
+.product-query-form {
+    width: 100%;
+    /*max-width: 600px;*/
+    /* Maximum width for the form */
+    margin: 0 auto;
+    /* Center the form horizontally */
+    padding: 20px;
+    box-sizing: border-box;
+    /* Ensure padding and border are included in the width */
+    background-color: #f9f9f9;
+    /* Light grey background for the form */
+    border-radius: 8px;
+    /* Rounded corners for the form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Shadow for a 3D effect */
+}
+
+.selection-container {
+    display: flex;
+    justify-content: center;
+    /* Center the items horizontally */
+    gap: 30px;
+    /* Add space between the sections */
+    margin-bottom: 20px;
+}
+
+.number-input-section {
+    display: flex;
+    flex-direction: column;
+    /* Stack label and input vertically */
+    align-items: center;
+    /* Center align items horizontally */
+}
+
+.number-input {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.number-input button {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 0 5px;
+}
+
+.number-input input {
+    width: 50px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.number-input button:hover {
+    background-color: #ddd;
+}
+
+.number-input button:active {
+    background-color: #ccc;
+}
+
+button[type="submit"] {
+    width: 100%;
+    background-color: #0073e6;
+    /* Cool blue color */
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 5px;
+    /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Shadow for a 3D effect */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transition */
+}
+
+button[type="submit"]:hover {
+    background-color: #005bb5;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    /* Darker shadow on hover */
+}
+
+a.add_to_cart_button {
+    display: inline-block;
+    /* Ensure it behaves like a block element */
+    width: 100%;
+    /* Full width */
+    background-color: #0073e6;
+    /* Cool blue color */
+    color: white !important;
+    /* Text color */
+    text-decoration: none;
+    /* Remove underline */
+    padding: 15px;
+    /* Add padding */
+    font-size: 18px;
+    /* Set font size */
+    cursor: pointer;
+    /* Show pointer cursor */
+    margin-top: 20px;
+    /* Space above the button */
+    text-align: center;
+    /* Center the text */
+    border-radius: 5px;
+    /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Shadow for a 3D effect */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transition */
+}
+
+a.add_to_cart_button:hover {
+    background-color: #005bb5;
+    /* Darker blue on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    /* Darker shadow on hover */
+}
