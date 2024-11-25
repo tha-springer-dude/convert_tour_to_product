@@ -554,6 +554,15 @@ function create_product_from_tour($ttbm_post_id) {
     // Set the product's language to match the tour's language
     pll_set_post_language($product_id, $tour_language_code);
 
+    // Transfer gallery images from the `ttbm_tour` post type
+    $gallery_images_serialized = get_post_meta($ttbm_post_id, 'ttbm_gallery_images', true);
+    $gallery_images = maybe_unserialize($gallery_images_serialized);
+
+    if (is_array($gallery_images) && !empty($gallery_images)) {
+        // Update WooCommerce product gallery images
+        update_post_meta($product_id, '_product_image_gallery', implode(',', $gallery_images));
+    }
+
     // Debug log for confirmation
     //error_log('Product created with ID: ' . $product_id . ' from Tour ID: ' . $ttbm_post_id);
 
