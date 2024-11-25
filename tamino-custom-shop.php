@@ -908,7 +908,7 @@ function create_pdf($ttbm_post_id, $product_Title, $plain_text_content, $image_p
         //This feature crashes the server - running out of memory
 
          // Retrieve the post meta using WordPress's standard function
-        /*$gallery_images_serialized = get_post_meta($ttbm_post_id, 'ttbm_gallery_images', true);
+        $gallery_images_serialized = get_post_meta($ttbm_post_id, 'ttbm_gallery_images', true);
         $gallery_images = maybe_unserialize($gallery_images_serialized);
 
         $image_width = 40;   // Set the width of each image
@@ -950,7 +950,7 @@ function create_pdf($ttbm_post_id, $product_Title, $plain_text_content, $image_p
         } else {
             // Write Error-message if images are not found to error log
             error_log("Gallery images meta is not an array or is invalid.");
-        }*/
+        }
 
         /*******************************************************************
          ******************** TOUR DESCRIPTION  ****************************
